@@ -1,7 +1,6 @@
 {
   "name": "shape-tracker",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack"
@@ -12,5 +11,6 @@
   "devDependencies": {
     "webpack": "4.39.3",
     "webpack-cli": "^3.3.8"
-  }
+  },
+  "description": ""
 }
