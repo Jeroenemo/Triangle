@@ -1,5 +1,5 @@
-import { TestScheduler } from 'jest';
-import Triangle from './../src/triangle.js';
+
+import Triangle from '../src/js/triangle.js';
 
 describe('Triangle', () => {
   test('should correctly create triangle object with three lengths', () => {
@@ -20,4 +20,20 @@ describe('Triangle', () => {
     const isocTriangle = new Triangle(5,5,7)
     expect(isocTriangle.checkType()).toEqual("isosceles triangle");
   });
+  test('should correctly determine whether three lengths make an equilateral triangle', () => {
+    const equiTriangle = new Triangle(5,5,5)
+    expect(equiTriangle.checkType()).toEqual("equilateral triangle");
+  })
 });
+
+// describe('Triangle', () => {
+//   let reusableTriangle;
+
+//   beforeEach(() => {
+//     reusableTriangle = new Triangle(5, 5, 5);
+//   });
+
+//   test('should show how beforeEach() works', () => {
+//     console.log(reusableTriangle);
+//   });
+// });
